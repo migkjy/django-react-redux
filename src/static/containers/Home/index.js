@@ -7,6 +7,8 @@ import './style.scss';
 import reactLogo from './images/react-logo.png';
 import reduxLogo from './images/redux-logo.png';
 
+import Udemy from '../../udemy';
+
 class HomeView extends React.Component {
     static propTypes = {
         statusText: PropTypes.string,
@@ -37,9 +39,10 @@ class HomeView extends React.Component {
                     />
                 </div>
                 <div className="text-center">
-                    <h1>Django React Redux Demo</h1>
+                    <h1>Django React Redux Demo Changed</h1>
                     <h4>Hello, {this.props.userName || 'guest'}.</h4>
                 </div>
+                <Udemy />
                 <div className="margin-top-medium text-center">
                     <p>Attempt to access some <a onClick={this.goToProtected}><b>protected content</b></a>.</p>
                 </div>
