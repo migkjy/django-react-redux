@@ -17,8 +17,15 @@ const node = (
     <Root store={store} history={history} />
 );
 
+// sessionStorage는 HTML저장소. 
+// sessionStorage.setItem("domain", "webisfree.com");
+// sessionStorage.getItem("domain");
+// sessionStorage.removeItem("domain");
+// sessionStorage.clear();
+
 const token = sessionStorage.getItem('token');
 let user = {};
+
 try {
     user = JSON.parse(sessionStorage.getItem('user'));
 } catch (e) {
